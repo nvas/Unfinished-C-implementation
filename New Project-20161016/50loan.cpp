@@ -9,8 +9,10 @@ int main()
     double Exact_payment;
     int n_years,i,j,k;
     double test,exponent;
-    double monthly_payment[50];
-    string customer_name[50];
+    double monthly_payment[50],*mptr;
+    mptr=&monthly_payment[0];
+    string customer_name[50],*cptr;
+    cptr=&customer_name[0];
     // double array[5];
     int entries;
     /* ************* declarations finish ************* */
@@ -59,8 +61,8 @@ int main()
         
         /* ************* printing customer monthly payments ************* */
         for (int k=0;k<entries;++k){
-            cout<<k+1<<".Customer Name : "<<*(customer_name+k)<<"\n";
-            cout<<"  Monthly Payment : "<<*(monthly_payment+k)<<"\n";
+            cout<<k+1<<".Customer Name : "<<*(cptr+k)<<"\n";
+            cout<<"  Monthly Payment : "<<*(cptr+k)<<"\n";
         }  // End of Printing for Loop 
     } 
     else {
