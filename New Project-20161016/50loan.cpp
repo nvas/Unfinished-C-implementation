@@ -62,7 +62,7 @@ int main()
         /* ************* printing customer monthly payments ************* */
         for (int k=0;k<entries;++k){
             cout<<k+1<<".Customer Name : "<<*(cptr+k)<<"\n";
-            cout<<"  Monthly Payment : "<<*(cptr+k)<<"\n";
+            cout<<"  Monthly Payment : "<<*(mptr+k)<<"\n";
         }  // End of Printing for Loop 
     } 
     else {
