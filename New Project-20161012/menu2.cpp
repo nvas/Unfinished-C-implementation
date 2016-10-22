@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
    int num;
-   cout<<"MENU \t 1 for cout, 2 for cin, 3 for for, 4 for return \n";
+   cout<<"MENU ======> \t 1 for cout, 2 for cin, 3 for for, 4 for return \n";
    cout<<"enter a number \n";
    cin>>num;
    do{ 
@@ -23,17 +23,14 @@ int main()
                 cout<<"you got return"<<"\n";
                 break;
         case 5:
-               cout<<"MENU \t 1 for cout, 2 for cin, 3 for for, 4 for return \n";
-                break;               
+                cout<<"Quitting .....\n";
+                break; 
+                
        default:
-                cout<<"MENU \t 1 for cout, 2 for cin, 3 for for, 4 for return \n";
+                cout<<"MENU ======> \t 1 for cout, 2 for cin, 3 for for, 4 for return \n";
    }
    break;
    }
    while(num >=5);
-
-   
-   
-   return 0;
 }
 
