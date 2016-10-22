@@ -10,10 +10,10 @@ int main()
    cin>>num;
    switch(num){
        case 1:
-                cout<<"you got cout";
+                cout<<"\t Standard output (cout) On most program environments, the standard output by default is the screen, and the C++ stream object defined to access it is cout . \n For formatted output operations, cout is used together with the insertion operator, which is written as << (i.e., two \"less than\" signs).t";
                 break;
        case 2:
-                cout<<"you got cin"<<"\n";
+                cout<<"\t cout is used for output, cin for input. Important Point. cout and cin are not key words in the C++ language.\n  They are variables, instances of classes, that have been declared in <iostream>.  cout is a variable of type ostream." << "\n";
                 break;
        case 3:
                 cout<<"you got for"<<"\n";
@@ -28,4 +28,3 @@ int main()
    }
    return 0;
 }
-
