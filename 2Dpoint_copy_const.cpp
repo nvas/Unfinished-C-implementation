@@ -18,6 +18,9 @@ public:
     
     point(const point &obj){mval=obj.mval;copyNo=obj.copyNo+1;cout<<"Inside >>copy<< constructor.."<<endl;}
     ~point(){if(copyNo==0)cout<<"Destructing >>original<<...."<<endl;else cout<<"Destructing copy "<<copyNo<<endl;}
+
+
+
 };
 
 int main(){
@@ -30,9 +33,9 @@ int main(){
     cin>>user_y;
     
     point xy1(user_x,user_y);
-    //point yx=xy1;
+    point yx=xy1;
     cout<<"("<<xy1.getX()<<","<<xy1.getY()<<")"<<endl;
-   
+    
     
     
     return 0;
