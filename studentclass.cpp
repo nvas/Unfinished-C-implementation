@@ -15,10 +15,10 @@ public:
     void setage(unsigned int _age){
         age=_age;
     }
-    void setname(unsigned int _name){
+    void setname(string _name){
         name=_name;
     }
-    void setaddress(unsigned int _address){
+    void setaddress(string _address){
         address=_address;
     }
     unsigned int getID(unsigned int _id){
@@ -38,26 +38,31 @@ public:
 
 class Students{
 private:
-    map<string,unsigned int> map1;
+  
 public:
+      map<unsigned int, Student> map1;
     void setmap(){}
 
 };
 
 
 int main (){
-
-    int temp_num;
-    string temp_string;
+    Student student;
+    Students students;
+    unsigned int num,age;
+    string name,address;
     map<string,unsigned int> map1;
     
-    cout<<"Enter Number"<<endl;
-    cin>>temp_num;
+    cout<<"Enter student ID number"<<endl;
+    student.setID(num) ;
+    cout<<"Enter student name "<<endl;
+    student.setname(name);
+    cout<<"Enter address"<<endl;
+    student.setaddress(address);
+    cout<<"Enter age"<<endl;
+    student.setage(age);
     
-    cout<<"Enter string"<<endl;
-    cin>>temp_string;
-    
-    map1.insert(pair<string, unsigned int>(temp_string,temp_num));
+    Students.map1.insert(pair<unsigned int, Student>(id,&student));
     
     for(map<string,unsigned int>::iterator item=map1.begin();item!=map1.end();item++){
         cout<<item -> first <<" "<<item -> second<<" "<<endl;
